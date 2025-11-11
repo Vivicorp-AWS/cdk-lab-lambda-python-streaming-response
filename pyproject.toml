@@ -1,0 +1,18 @@
+[project]
+name = "cdk-lab-lambda-python-streaming-response"
+version = "0.1.0"
+requires-python = ">=3.12.12"
+dependencies = [
+    "aws-cdk-lib>=2.223.0",
+    "cdk-lambda-layer-builder",
+]
+
+[dependency-groups]
+dev = [
+    "fastapi>=0.121.1",
+    "ipython>=9.7.0",
+    "uvicorn>=0.38.0",
+]
+
+[tool.uv.sources]
+cdk-lambda-layer-builder = { git = "https://github.com/Vivicorp-AWS/aws-cdk-lambda-layer-builder.git" }
